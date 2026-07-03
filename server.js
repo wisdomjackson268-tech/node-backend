@@ -14,7 +14,7 @@ app.use(helmet());
 
 // 2. Configure CORS whitelist to accept requests exclusively from React port 5173
 const corsOptions = {
-  origin: 'http://localhost:5173',
+  origin: ['http://localhost:5173', 'https://jherry268.vercel.app'],
   optionsSuccessStatus: 200
 };
 app.use(cors(corsOptions));
